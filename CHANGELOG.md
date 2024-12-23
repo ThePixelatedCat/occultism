@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.171.0] - 2024-12-23
+### :sparkles: New Features
+- [`6726363`](https://github.com/klikli-dev/occultism/commit/6726363dd63b81537287cc113fe7b427d0142293) - add CrusherJobEvent *(PR [#1274](https://github.com/klikli-dev/occultism/pull/1274) by [@dphaldes](https://github.com/dphaldes))*
+- [`2c09a08`](https://github.com/klikli-dev/occultism/commit/2c09a08709e79762117b4c8a7a1bcb8865582359) - add SmelterJobEvent *(PR [#1275](https://github.com/klikli-dev/occultism/pull/1275) by [@dphaldes](https://github.com/dphaldes))*
+
+### :bug: Bug Fixes
+- [`9b58196`](https://github.com/klikli-dev/occultism/commit/9b58196f27736acf4e96e394b00a97fc90bb6b3e) - wrong file name for japanese translation *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+- [`0a4ae7e`](https://github.com/klikli-dev/occultism/commit/0a4ae7e7149ea57f314096257f2ff3f16e4e2e2c) - stream codec for machine references *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+### :wrench: Chores
+- [`c0a2d0c`](https://github.com/klikli-dev/occultism/commit/c0a2d0cccaa8a3b5bd0dab677d7bf24505d26548) - [ImgBot] Optimize images *(PR [#1273](https://github.com/klikli-dev/occultism/pull/1273) by [@imgbot[bot]](https://github.com/apps/imgbot))*
+
+
 ## [release/v1.21.1-1.170.0] - 2024-12-21
 ### :sparkles: New Features
 - [`ae186be`](https://github.com/klikli-dev/occultism/commit/ae186bed7d93179ebc2ac63bdbbe4d66ac770193) - Speed Up our rituals, iesnium and eldritch upgrades and otherthings ([#1257](https://github.com/klikli-dev/occultism/pull/1257)) - thanks @Eqis-Edu *(commit by [@Eqis-Edu](https://github.com/Eqis-Edu))*
@@ -1889,3 +1902,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.168.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.167.0...release/v1.21.1-1.168.0
 [release/v1.21.1-1.169.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.168.0...release/v1.21.1-1.169.0
 [release/v1.21.1-1.170.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.169.0...release/v1.21.1-1.170.0
+[release/v1.21.1-1.171.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.170.0...release/v1.21.1-1.171.0
