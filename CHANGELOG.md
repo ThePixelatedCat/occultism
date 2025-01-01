@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.171.1] - 2025-01-01
+### :bug: Bug Fixes
+- [`6450b97`](https://github.com/klikli-dev/occultism/commit/6450b9711fe0cf4a05be80495846c9f7d10522f0) - three fixes *(PR [#1279](https://github.com/klikli-dev/occultism/pull/1279) by [@Eqis-Edu](https://github.com/Eqis-Edu))*
+
+
 ## [release/v1.21.1-1.171.0] - 2024-12-23
 ### :sparkles: New Features
 - [`6726363`](https://github.com/klikli-dev/occultism/commit/6726363dd63b81537287cc113fe7b427d0142293) - add CrusherJobEvent *(PR [#1274](https://github.com/klikli-dev/occultism/pull/1274) by [@dphaldes](https://github.com/dphaldes))*
@@ -1903,3 +1908,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.169.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.168.0...release/v1.21.1-1.169.0
 [release/v1.21.1-1.170.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.169.0...release/v1.21.1-1.170.0
 [release/v1.21.1-1.171.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.170.0...release/v1.21.1-1.171.0
+[release/v1.21.1-1.171.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.0...release/v1.21.1-1.171.1
