@@ -4,6 +4,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.172.0] - 2025-01-13
+### :sparkles: New Features
+- [`54ad4b3`](https://github.com/klikli-dev/occultism/commit/54ad4b30864ae8c4861983e133a4961f5c6fd75f) - Update a russian translation *(PR [#1281](https://github.com/klikli-dev/occultism/pull/1281) by [@Heimdallr-1](https://github.com/Heimdallr-1))*
+- [`44d8902`](https://github.com/klikli-dev/occultism/commit/44d89022f02678353149acd803cac8061d9d7f2f) - Smelter upgrade *(PR [#1286](https://github.com/klikli-dev/occultism/pull/1286) by [@Eqis-Edu](https://github.com/Eqis-Edu))*
+
+### :bug: Bug Fixes
+- [`1ffa776`](https://github.com/klikli-dev/occultism/commit/1ffa7763883f4da957bab3b010c36f83f8e2d4c3) - ruru syntax errors *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+- [`c203e46`](https://github.com/klikli-dev/occultism/commit/c203e46c94c95fbca339ae35d2bfcb50b58d4958) - demonic wife ring on wrong hand *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+### :wrench: Chores
+- [`384cd56`](https://github.com/klikli-dev/occultism/commit/384cd569c36e93225a8c7c68dc8de11ae7b2ee17) - run datagen *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
 ## [release/v1.21.1-1.171.2] - 2025-01-06
 ### :bug: Bug Fixes
 - [`900cccc`](https://github.com/klikli-dev/occultism/commit/900cccce848dfac6d960c24b87b8ae4662d4784f) - reduce chimera shrinking speed *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -1915,3 +1928,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.171.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.170.0...release/v1.21.1-1.171.0
 [release/v1.21.1-1.171.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.0...release/v1.21.1-1.171.1
 [release/v1.21.1-1.171.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.1...release/v1.21.1-1.171.2
+[release/v1.21.1-1.172.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.2...release/v1.21.1-1.172.0
