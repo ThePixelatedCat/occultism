@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.173.1] - 2025-01-17
+### :bug: Bug Fixes
+- [`d0082bf`](https://github.com/klikli-dev/occultism/commit/d0082bff8a4c425406a0bda1c04f922a1899af19) - Iesnium Golem fell out world *(PR [#1290](https://github.com/klikli-dev/occultism/pull/1290) by [@Eqis-Edu](https://github.com/Eqis-Edu))*
+
+
 ## [release/v1.21.1-1.173.0] - 2025-01-16
 ### :sparkles: New Features
 - [`a9674ae`](https://github.com/klikli-dev/occultism/commit/a9674ae5c02372af98c3d509c0e7852ded22fdf2) - Update zh_cn.json ([#1289](https://github.com/klikli-dev/occultism/pull/1289)) - thank you @Karma-Tress *(commit by [@Karma-Tress](https://github.com/Karma-Tress))*
@@ -1935,3 +1940,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.171.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.1...release/v1.21.1-1.171.2
 [release/v1.21.1-1.172.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.2...release/v1.21.1-1.172.0
 [release/v1.21.1-1.173.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.172.0...release/v1.21.1-1.173.0
+[release/v1.21.1-1.173.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.0...release/v1.21.1-1.173.1
