@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.173.2] - 2025-02-04
+### :bug: Bug Fixes
+- [`b921288`](https://github.com/klikli-dev/occultism/commit/b921288538d2759efaf23fc4055678dc096d44c9) - update to theurgy particle changes *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
 ## [release/v1.21.1-1.173.1] - 2025-01-17
 ### :bug: Bug Fixes
 - [`d0082bf`](https://github.com/klikli-dev/occultism/commit/d0082bff8a4c425406a0bda1c04f922a1899af19) - Iesnium Golem fell out world *(PR [#1290](https://github.com/klikli-dev/occultism/pull/1290) by [@Eqis-Edu](https://github.com/Eqis-Edu))*
@@ -1941,3 +1946,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.172.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.2...release/v1.21.1-1.172.0
 [release/v1.21.1-1.173.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.172.0...release/v1.21.1-1.173.0
 [release/v1.21.1-1.173.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.0...release/v1.21.1-1.173.1
+[release/v1.21.1-1.173.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.1...release/v1.21.1-1.173.2
