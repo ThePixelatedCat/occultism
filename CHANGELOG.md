@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.173.3] - 2025-02-12
+### :bug: Bug Fixes
+- [`b84daaf`](https://github.com/klikli-dev/occultism/commit/b84daaf4ca9579ae97c9c33076a409da656f1f55) - typo'd and incorrect item IDs in JP localisation, causing errors on opening book of spirits. Closes [#1298](https://github.com/klikli-dev/occultism/pull/1298) *(PR [#1299](https://github.com/klikli-dev/occultism/pull/1299) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+  - :arrow_lower_right: *fixes issue [#1298](https://github.com/klikli-dev/occultism/issues/1298) opened by [@niedle2914](https://github.com/niedle2914)*
+
+
 ## [release/v1.21.1-1.173.2] - 2025-02-04
 ### :bug: Bug Fixes
 - [`b921288`](https://github.com/klikli-dev/occultism/commit/b921288538d2759efaf23fc4055678dc096d44c9) - update to theurgy particle changes *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -1947,3 +1953,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.173.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.172.0...release/v1.21.1-1.173.0
 [release/v1.21.1-1.173.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.0...release/v1.21.1-1.173.1
 [release/v1.21.1-1.173.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.1...release/v1.21.1-1.173.2
+[release/v1.21.1-1.173.3]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.2...release/v1.21.1-1.173.3
