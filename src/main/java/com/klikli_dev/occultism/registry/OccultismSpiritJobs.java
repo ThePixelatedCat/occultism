@@ -55,14 +55,14 @@ public class OccultismSpiritJobs {
                 job.setTimeToConvert(15);
                 job.setMaxTradesPerRound(4);
                 return job;
-            }, SpiritJobClient.create("sapling_trader")));
+            }, SpiritJobClient.create("otherstone_trader")));
     public static final DeferredHolder<SpiritJobFactory, SpiritJobFactory> TRADE_OTHERWORLD_SAPLINGS_T2 = JOBS.register("trade_otherworld_saplings_t1",
             () -> new SpiritJobFactory((entity) -> {
                 TraderJob job = new TraderJob(entity, ResourceLocation.fromNamespaceAndPath(Occultism.MODID, "spirit_trade/otherworld_sapling"));
                 job.setTimeToConvert(20);
                 job.setMaxTradesPerRound(1);
                 return job;
-            }, SpiritJobClient.create("otherstone_trader")));
+            }, SpiritJobClient.create("sapling_trader")));
 
     //Crushing jobs
     public static final DeferredHolder<SpiritJobFactory, SpiritJobFactory> CRUSH_TIER1 = JOBS.register("crush_tier1",
