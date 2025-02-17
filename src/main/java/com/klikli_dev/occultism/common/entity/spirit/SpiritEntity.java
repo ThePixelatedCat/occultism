@@ -679,14 +679,11 @@ public abstract class SpiritEntity extends TamableAnimal implements ISkinnedCrea
 
     @Override
     public InteractionResult interactAt(Player player, Vec3 vec, InteractionHand hand) {
-        ItemStack itemStack = player.getItemInHand(hand);
-
-        if (itemStack.isEmpty()) {
-            if (this.isTame() && player.isShiftKeyDown()) {
-                this.openScreen(player);
-                return InteractionResult.SUCCESS;
-            }
+        if (this.isTame() && player.isShiftKeyDown()) {
+            this.openScreen(player);
+            return InteractionResult.SUCCESS;
         }
+        
         return super.interactAt(player, vec, hand);
     }
 
