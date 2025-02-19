@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.174.0] - 2025-02-19
+### :sparkles: New Features
+- [`1087365`](https://github.com/klikli-dev/occultism/commit/108736506c1df2309f8b86d76749711e3e669ac7) - spirit inventory updates *(PR [#1296](https://github.com/klikli-dev/occultism/pull/1296) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+- [`f4f49e9`](https://github.com/klikli-dev/occultism/commit/f4f49e962bcffad92511416f64333368db1dddd3) - Demonic partner cooks whole stacks when shift-clicked *(PR [#1302](https://github.com/klikli-dev/occultism/pull/1302) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+
+
 ## [release/v1.21.1-1.173.4] - 2025-02-12
 ### :bug: Bug Fixes
 - [`013a46c`](https://github.com/klikli-dev/occultism/commit/013a46c8a93fff4d4473594c56a0b2bb409e0526) - mixed up models of sapling and otherstone trader *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -1960,3 +1966,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.173.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.1...release/v1.21.1-1.173.2
 [release/v1.21.1-1.173.3]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.2...release/v1.21.1-1.173.3
 [release/v1.21.1-1.173.4]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.3...release/v1.21.1-1.173.4
+[release/v1.21.1-1.174.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.4...release/v1.21.1-1.174.0
