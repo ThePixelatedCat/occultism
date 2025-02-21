@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.174.0] - 2025-02-19
+### :sparkles: New Features
+- [`1087365`](https://github.com/klikli-dev/occultism/commit/108736506c1df2309f8b86d76749711e3e669ac7) - spirit inventory updates *(PR [#1296](https://github.com/klikli-dev/occultism/pull/1296) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+- [`f4f49e9`](https://github.com/klikli-dev/occultism/commit/f4f49e962bcffad92511416f64333368db1dddd3) - Demonic partner cooks whole stacks when shift-clicked *(PR [#1302](https://github.com/klikli-dev/occultism/pull/1302) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+
+
+## [release/v1.21.1-1.173.4] - 2025-02-12
+### :bug: Bug Fixes
+- [`013a46c`](https://github.com/klikli-dev/occultism/commit/013a46c8a93fff4d4473594c56a0b2bb409e0526) - mixed up models of sapling and otherstone trader *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.173.3] - 2025-02-12
+### :bug: Bug Fixes
+- [`b84daaf`](https://github.com/klikli-dev/occultism/commit/b84daaf4ca9579ae97c9c33076a409da656f1f55) - typo'd and incorrect item IDs in JP localisation, causing errors on opening book of spirits. Closes [#1298](https://github.com/klikli-dev/occultism/pull/1298) *(PR [#1299](https://github.com/klikli-dev/occultism/pull/1299) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+  - :arrow_lower_right: *fixes issue [#1298](https://github.com/klikli-dev/occultism/issues/1298) opened by [@niedle2914](https://github.com/niedle2914)*
+
+
 ## [release/v1.21.1-1.173.2] - 2025-02-04
 ### :bug: Bug Fixes
 - [`b921288`](https://github.com/klikli-dev/occultism/commit/b921288538d2759efaf23fc4055678dc096d44c9) - update to theurgy particle changes *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -1947,3 +1964,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.173.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.172.0...release/v1.21.1-1.173.0
 [release/v1.21.1-1.173.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.0...release/v1.21.1-1.173.1
 [release/v1.21.1-1.173.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.1...release/v1.21.1-1.173.2
+[release/v1.21.1-1.173.3]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.2...release/v1.21.1-1.173.3
+[release/v1.21.1-1.173.4]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.3...release/v1.21.1-1.173.4
+[release/v1.21.1-1.174.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.4...release/v1.21.1-1.174.0
