@@ -22,11 +22,16 @@
 
 package com.klikli_dev.occultism.common.entity.possessed;
 
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.monster.hoglin.Hoglin;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ServerLevelAccessor;
+import org.jetbrains.annotations.Nullable;
 
 public class PossessedHoglinEntity extends Hoglin {
 
@@ -35,10 +40,19 @@ public class PossessedHoglinEntity extends Hoglin {
         super(type, worldIn);
     }
 
-    //region Static Methods
     public static AttributeSupplier.Builder createAttributes() {
         return Hoglin.createAttributes()
                 .add(Attributes.ATTACK_DAMAGE, 12.0)
                 .add(Attributes.MAX_HEALTH, 66.0);
+    }
+
+    @Nullable
+    @Override
+    public SpawnGroupData finalizeSpawn(ServerLevelAccessor level, DifficultyInstance difficulty, MobSpawnType spawnType, @Nullable SpawnGroupData spawnGroupData) {
+        var result = super.finalizeSpawn(level, difficulty, spawnType, spawnGroupData);
+
+        this.setBaby(false); //force possessed hoglins to be adult to avoid non-dropping ones ...
+
+        return result;
     }
 }
