@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.175.0] - 2025-02-25
+### :sparkles: New Features
+- [`501fe08`](https://github.com/klikli-dev/occultism/commit/501fe080d65902f31ef30937a371400a2b2cfb47) - Added tooltip for otherglass *(PR [#1303](https://github.com/klikli-dev/occultism/pull/1303) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+  - :arrow_lower_right: *addresses issue [#1285](https://github.com/klikli-dev/occultism/issues/1285) opened by [@MuteTiefling](https://github.com/MuteTiefling)*
+
+### :bug: Bug Fixes
+- [`ac0c23b`](https://github.com/klikli-dev/occultism/commit/ac0c23b51cc969b03af15e6c4629813eaf358145) - shift-rightclick with book of calling no longer works as of [#1087365](https://github.com/klikli-dev/occultism/pull/1087365) *(PR [#1307](https://github.com/klikli-dev/occultism/pull/1307) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+
+
 ## [release/v1.21.1-1.174.1] - 2025-02-24
 ### :bug: Bug Fixes
 - [`c4445ed`](https://github.com/klikli-dev/occultism/commit/c4445ed883151a615251078354dbec13d0b51099) - prevent possessed hoglins spawning as babies (who don't drop loot) *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -1973,3 +1982,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.173.4]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.3...release/v1.21.1-1.173.4
 [release/v1.21.1-1.174.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.4...release/v1.21.1-1.174.0
 [release/v1.21.1-1.174.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.174.0...release/v1.21.1-1.174.1
+[release/v1.21.1-1.175.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.174.2...release/v1.21.1-1.175.0
