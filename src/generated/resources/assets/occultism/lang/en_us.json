@@ -148,6 +148,7 @@
   "block.occultism.othercobblestone_wall": "Othercobblestone Wall",
   "block.occultism.otherflower": "Otherflower",
   "block.occultism.otherglass": "Otherglass",
+  "block.occultism.otherglass.auto_tooltip": "Wear Otherworld Goggles to see it once placed",
   "block.occultism.otherplanks": "Otherplanks",
   "block.occultism.otherplanks_button": "Otherplanks Button",
   "block.occultism.otherplanks_door": "Otherplanks Door",
