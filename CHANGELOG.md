@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.175.2] - 2025-02-25
+### :bug: Bug Fixes
+- [`97ee8f1`](https://github.com/klikli-dev/occultism/commit/97ee8f10e063d724a2e7815c97ee1a7ed7328470) - ensure beholder can deal damage even if owner player cannot be retrieved *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
 ## [release/v1.21.1-1.175.1] - 2025-02-25
 ### :bug: Bug Fixes
 - [`fa3704e`](https://github.com/klikli-dev/occultism/commit/fa3704edc6951cdd281d33456a39a7d3409ffee9) - let bat familiar show it's buff icons *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -1989,3 +1994,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.174.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.174.0...release/v1.21.1-1.174.1
 [release/v1.21.1-1.175.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.174.2...release/v1.21.1-1.175.0
 [release/v1.21.1-1.175.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.0...release/v1.21.1-1.175.1
+[release/v1.21.1-1.175.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.1...release/v1.21.1-1.175.2
