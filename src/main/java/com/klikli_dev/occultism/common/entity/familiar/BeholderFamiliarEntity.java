@@ -30,7 +30,6 @@ import com.klikli_dev.occultism.registry.OccultismAdvancements;
 import com.klikli_dev.occultism.util.FamiliarUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.DustParticleOptions;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
@@ -266,7 +265,7 @@ public class BeholderFamiliarEntity extends ColoredFamiliarEntity {
 
     private static class RayGoal extends Goal {
 
-        private static final int MAX_COOLDOWN = 20 * 1;
+        private static final int MAX_COOLDOWN = 20;
 
         protected final BeholderFamiliarEntity entity;
         private int cooldown = MAX_COOLDOWN;
@@ -323,8 +322,13 @@ public class BeholderFamiliarEntity extends ColoredFamiliarEntity {
                 if (this.entity.hasEffect(MobEffects.DAMAGE_BOOST))
                     damage *= this.entity.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() + 2;
 
-                if (e != null && owner instanceof Player player) {
+                if (e == null)
+                    continue;
+
+                if (owner instanceof Player player) {
                     e.hurt(this.entity.damageSources().playerAttack(player), damage);
+                } else {
+                    e.hurt(this.entity.damageSources().mobAttack(this.entity), damage);
                 }
             }
         }
