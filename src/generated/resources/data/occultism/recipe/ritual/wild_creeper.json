@@ -11,40 +11,28 @@
   "entity_to_summon": "occultism:wild_horde_creeper",
   "ingredients": [
     {
-      "item": "minecraft:tnt"
-    },
-    {
-      "item": "minecraft:oak_leaves"
+      "item": "minecraft:moss_block"
     },
     {
       "item": "minecraft:moss_block"
     },
     {
-      "item": "minecraft:tnt"
-    },
-    {
-      "item": "minecraft:birch_leaves"
+      "item": "minecraft:moss_block"
     },
     {
       "item": "minecraft:moss_block"
     },
     {
-      "item": "minecraft:tnt"
+      "tag": "minecraft:leaves"
     },
     {
-      "item": "minecraft:spruce_leaves"
+      "tag": "minecraft:leaves"
     },
     {
-      "item": "minecraft:moss_block"
+      "tag": "minecraft:leaves"
     },
     {
-      "item": "minecraft:tnt"
-    },
-    {
-      "item": "minecraft:jungle_leaves"
-    },
-    {
-      "item": "minecraft:moss_block"
+      "tag": "minecraft:leaves"
     }
   ],
   "pentacle_id": "occultism:contact_wild_spirit",

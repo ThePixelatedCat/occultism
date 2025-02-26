@@ -14,13 +14,13 @@
       "item": "minecraft:dragon_breath"
     },
     {
-      "tag": "c:obsidians"
+      "item": "minecraft:purple_concrete"
     },
     {
       "tag": "c:end_stones"
     },
     {
-      "item": "minecraft:purple_glazed_terracotta"
+      "item": "minecraft:purple_concrete"
     }
   ],
   "pentacle_id": "occultism:possess_afrit",

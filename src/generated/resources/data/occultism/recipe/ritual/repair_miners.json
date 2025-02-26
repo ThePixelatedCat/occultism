@@ -6,13 +6,16 @@
   "duration": 60,
   "ingredients": [
     {
-      "tag": "c:storage_blocks/iesnium"
-    },
-    {
-      "item": "occultism:spirit_attuned_crystal"
+      "item": "occultism:otherworld_essence"
     },
     {
       "item": "occultism:otherworld_essence"
+    },
+    {
+      "item": "occultism:otherworld_essence"
+    },
+    {
+      "item": "occultism:spirit_attuned_gem"
     }
   ],
   "pentacle_id": "occultism:craft_afrit",

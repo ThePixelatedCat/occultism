@@ -99,6 +99,7 @@ public class OccultismTags {
         public static final TagKey<Item> SILVER_ORE = makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "ores/silver"));
         public static final TagKey<Item> RAW_IESNIUM = makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "raw_materials/iesnium"));
         public static final TagKey<Item> RAW_SILVER = makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "raw_materials/silver"));
+        public static final TagKey<Item> INGOTS_SILVER = makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "ingots/silver"));
         public static final TagKey<Item> STORAGE_BLOCK_IESNIUM = makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "storage_blocks/iesnium"));
         public static final TagKey<Item> STORAGE_BLOCK_SILVER = makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "storage_blocks/silver"));
         public static final TagKey<Item> STORAGE_BLOCK_RAW_IESNIUM = makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "storage_blocks/raw_iesnium"));

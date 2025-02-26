@@ -5,8 +5,8 @@
   },
   "duration": 780,
   "entity_to_sacrifice": {
-    "display_name": "ritual.occultism.sacrifice.parrots",
-    "tag": "c:parrots"
+    "display_name": "ritual.occultism.sacrifice.sheep",
+    "tag": "c:sheep"
   },
   "ingredients": [
     {

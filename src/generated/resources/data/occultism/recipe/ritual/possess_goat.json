@@ -5,8 +5,8 @@
   },
   "duration": 240,
   "entity_to_sacrifice": {
-    "display_name": "ritual.occultism.sacrifice.tadpoles",
-    "tag": "c:tadpoles"
+    "display_name": "ritual.occultism.sacrifice.chicken",
+    "tag": "c:chickens"
   },
   "entity_to_summon": "occultism:mercy_goat",
   "ingredients": [

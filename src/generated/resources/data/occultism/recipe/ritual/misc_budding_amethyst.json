@@ -5,42 +5,24 @@
   },
   "duration": 180,
   "entity_to_sacrifice": {
-    "display_name": "ritual.occultism.sacrifice.allay",
-    "tag": "c:allay"
+    "display_name": "ritual.occultism.sacrifice.pigs",
+    "tag": "c:pigs"
   },
   "ingredients": [
     {
-      "item": "minecraft:small_amethyst_bud"
-    },
-    {
-      "item": "minecraft:medium_amethyst_bud"
-    },
-    {
-      "item": "minecraft:large_amethyst_bud"
-    },
-    {
-      "item": "minecraft:amethyst_cluster"
-    },
-    {
-      "item": "minecraft:amethyst_shard"
+      "tag": "c:dusts/amethyst"
     },
     {
       "tag": "c:dusts/amethyst"
     },
     {
-      "item": "minecraft:small_amethyst_bud"
+      "tag": "c:dusts/amethyst"
     },
     {
-      "item": "minecraft:medium_amethyst_bud"
+      "tag": "c:dusts/amethyst"
     },
     {
-      "item": "minecraft:large_amethyst_bud"
-    },
-    {
-      "item": "minecraft:amethyst_cluster"
-    },
-    {
-      "item": "minecraft:amethyst_shard"
+      "tag": "c:dusts/amethyst"
     },
     {
       "tag": "c:dusts/amethyst"

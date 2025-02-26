@@ -5,34 +5,34 @@
   },
   "duration": 90,
   "entity_to_sacrifice": {
-    "display_name": "ritual.occultism.sacrifice.iron_golem",
-    "tag": "c:golems/iron"
+    "display_name": "ritual.occultism.sacrifice.chicken",
+    "tag": "c:chickens"
   },
   "entity_to_summon": "occultism:possessed_strong_breeze",
   "ingredients": [
     {
-      "item": "minecraft:chiseled_tuff"
+      "item": "minecraft:copper_bulb"
     },
     {
-      "item": "minecraft:chiseled_tuff"
+      "item": "minecraft:copper_bulb"
     },
     {
-      "item": "minecraft:chiseled_tuff"
+      "item": "minecraft:copper_bulb"
     },
     {
-      "item": "minecraft:chiseled_tuff"
+      "item": "minecraft:copper_bulb"
     },
     {
-      "item": "minecraft:chiseled_tuff_bricks"
+      "item": "minecraft:tuff_bricks"
     },
     {
-      "item": "minecraft:chiseled_tuff_bricks"
+      "item": "minecraft:tuff_bricks"
     },
     {
-      "item": "minecraft:chiseled_tuff_bricks"
+      "item": "minecraft:tuff_bricks"
     },
     {
-      "item": "minecraft:chiseled_tuff_bricks"
+      "item": "minecraft:tuff_bricks"
     },
     {
       "item": "minecraft:breeze_rod"
