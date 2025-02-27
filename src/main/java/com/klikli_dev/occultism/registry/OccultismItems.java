@@ -186,7 +186,7 @@ public class OccultismItems {
             () -> new RainbowChalkItem(defaultProperties().stacksTo(1),
                     OccultismBlocks.CHALK_GLYPH_RAINBOW));
     public static final DeferredItem<Item> CHALK_VOID = ITEMS.register("chalk_void",
-            () -> new RainbowChalkItem(defaultProperties().setNoRepair().durability(4096),
+            () -> new RainbowChalkItem(defaultProperties().stacksTo(1),
                     OccultismBlocks.CHALK_GLYPH_VOID));
 
     public static final DeferredItem<Item> CHALK_WHITE_IMPURE = ITEMS.register("chalk_white_impure",
