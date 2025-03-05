@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.177.1] - 2025-03-05
+### :bug: Bug Fixes
+- [`6c24233`](https://github.com/klikli-dev/occultism/commit/6c24233cfebf27b40b4e5e1d99dfd03e57e83599) - wrong ingredients and text for apprentice ritual satchel *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
 ## [release/v1.21.1-1.176.0] - 2025-02-26
 ### :sparkles: New Features
 - [`e0efcd7`](https://github.com/klikli-dev/occultism/commit/e0efcd7b0a4a5e6aec1415a6801a839d5f85d644) - update ritual ingredients *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -2001,3 +2006,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.175.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.0...release/v1.21.1-1.175.1
 [release/v1.21.1-1.175.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.1...release/v1.21.1-1.175.2
 [release/v1.21.1-1.176.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.2...release/v1.21.1-1.176.0
+[release/v1.21.1-1.177.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.177.0...release/v1.21.1-1.177.1
