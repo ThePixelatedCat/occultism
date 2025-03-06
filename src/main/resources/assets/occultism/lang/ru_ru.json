@@ -1,6 +1,6 @@
 {
 "_comment": "Updated by: Heimdallr-1",
-"_comment": "Update date 06.03.2025 14:50",
+"_comment": "Update date: 06.03.2025 20:03",
 "_comment": "Перевод находится под моей эгидой!",
 
 "advancements.occultism.chalks.black.description": "Для четвёртого основания пентакля.",
@@ -2262,7 +2262,7 @@
 "ritual.occultism.familiar_mummy.started": "Вызов Мумии-фамильяр начался.",
 "ritual.occultism.familiar_otherworld_bird.conditions": "Для этого ритуала удовлетворены не все требования.",
 "ritual.occultism.familiar_otherworld_bird.finished": "Дрикрыл-фамильяр успешно вызван.",
-"ritual.occultism.familiar_otherworld_bird.interrupted": "Вызов Дриклыра-фамильяра прерван.",
+"ritual.occultism.familiar_otherworld_bird.interrupted": "Вызов Дрикрыра-фамильяра прерван.",
 "ritual.occultism.familiar_otherworld_bird.started": "Вызов Дрикрыла-фамильяр начался.",
 "ritual.occultism.familiar_parrot.conditions": "Для этого ритуала удовлетворены не все требования.",
 "ritual.occultism.familiar_parrot.finished": "Попугай-фамильяр успешно вызван.",
