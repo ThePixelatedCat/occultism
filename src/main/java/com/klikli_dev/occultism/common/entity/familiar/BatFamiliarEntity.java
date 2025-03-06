@@ -139,9 +139,9 @@ public class BatFamiliarEntity extends FamiliarEntity implements FlyingAnimal {
 
     public Iterable<MobEffectInstance> getFamiliarEffects() {
         List<MobEffectInstance> effects = new ArrayList<>();
-        effects.add(new MobEffectInstance(MobEffects.NIGHT_VISION, 300, 1, false, false));
+        effects.add(new MobEffectInstance(MobEffects.NIGHT_VISION, 300, 0, false, true));
         if (this.hasBlacksmithUpgrade())
-            effects.add(new MobEffectInstance(OccultismEffects.BAT_LIFESTEAL, 300, 0, false, false));
+            effects.add(new MobEffectInstance(OccultismEffects.BAT_LIFESTEAL, 300, 0, false, true));
         return effects;
     }
 

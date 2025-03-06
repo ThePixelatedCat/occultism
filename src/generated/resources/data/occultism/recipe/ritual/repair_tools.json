@@ -6,10 +6,13 @@
   "duration": 60,
   "ingredients": [
     {
-      "tag": "c:ingots/iesnium"
+      "item": "occultism:otherworld_essence"
     },
     {
-      "tag": "c:ingots/iesnium"
+      "item": "occultism:otherworld_essence"
+    },
+    {
+      "item": "occultism:otherworld_essence"
     },
     {
       "item": "occultism:spirit_attuned_gem"

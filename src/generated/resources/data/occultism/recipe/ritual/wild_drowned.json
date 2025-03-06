@@ -1,32 +1,26 @@
 {
   "type": "occultism:ritual",
   "activation_item": {
-    "item": "minecraft:heart_of_the_sea"
+    "item": "minecraft:fishing_rod"
   },
   "duration": 90,
   "entity_to_sacrifice": {
-    "display_name": "ritual.occultism.sacrifice.dolphin",
-    "tag": "c:dolphins"
+    "display_name": "ritual.occultism.sacrifice.fish",
+    "tag": "c:fish"
   },
   "entity_to_summon": "occultism:wild_horde_drowned",
   "ingredients": [
     {
-      "item": "minecraft:dead_brain_coral_block"
+      "item": "minecraft:pufferfish"
     },
     {
-      "item": "minecraft:dead_bubble_coral_block"
-    },
-    {
-      "item": "minecraft:dead_fire_coral_block"
-    },
-    {
-      "item": "minecraft:dead_horn_coral_block"
-    },
-    {
-      "item": "minecraft:dead_tube_coral_block"
+      "item": "minecraft:gravel"
     },
     {
       "item": "minecraft:dried_kelp_block"
+    },
+    {
+      "item": "minecraft:gravel"
     }
   ],
   "pentacle_id": "occultism:contact_wild_spirit",

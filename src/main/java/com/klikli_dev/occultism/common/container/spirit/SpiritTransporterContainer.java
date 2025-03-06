@@ -110,6 +110,35 @@ public class SpiritTransporterContainer extends SpiritContainer {
         }
     }
 
+    @Override
+    public ItemStack quickMoveStack(Player playerIn, int index) {
+        ItemStack itemstack = ItemStack.EMPTY;
+        Slot slot = this.slots.get(index);
+        final int filterSize = 14; // CHANGE IF FILTER SIZE IS CHANGED
+
+        if (slot != null && slot.hasItem()) {
+            ItemStack itemstack1 = slot.getItem();
+            itemstack = itemstack1.copy();
+            
+            if (index >= this.slots.size() - this.inventory.getSlots() - filterSize) {
+                if (!this.moveItemStackTo(itemstack1, 0, this.slots.size() - this.inventory.getSlots() - filterSize, true)) {
+                    return ItemStack.EMPTY;
+                }
+            } else if (!this.moveItemStackTo(itemstack1, this.slots.size() - this.inventory.getSlots() - filterSize, this.slots.size() - filterSize, true)) {
+                return ItemStack.EMPTY;
+            }
+            
+
+            if (itemstack1.isEmpty()) {
+                slot.set(ItemStack.EMPTY);
+            } else {
+                slot.setChanged();
+            }
+        }
+
+        return itemstack;
+    }
+
     public class FilterSlot extends SlotItemHandler {
 
         public FilterSlot(IItemHandler handler, int inventoryIndex, int x, int y) {

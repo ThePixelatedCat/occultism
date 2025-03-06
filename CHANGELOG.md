@@ -4,6 +4,90 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.177.1] - 2025-03-05
+### :bug: Bug Fixes
+- [`6c24233`](https://github.com/klikli-dev/occultism/commit/6c24233cfebf27b40b4e5e1d99dfd03e57e83599) - wrong ingredients and text for apprentice ritual satchel *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.176.0] - 2025-02-26
+### :sparkles: New Features
+- [`e0efcd7`](https://github.com/klikli-dev/occultism/commit/e0efcd7b0a4a5e6aec1415a6801a839d5f85d644) - update ritual ingredients *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.175.2] - 2025-02-25
+### :bug: Bug Fixes
+- [`97ee8f1`](https://github.com/klikli-dev/occultism/commit/97ee8f10e063d724a2e7815c97ee1a7ed7328470) - ensure beholder can deal damage even if owner player cannot be retrieved *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.175.1] - 2025-02-25
+### :bug: Bug Fixes
+- [`fa3704e`](https://github.com/klikli-dev/occultism/commit/fa3704edc6951cdd281d33456a39a7d3409ffee9) - let bat familiar show it's buff icons *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.175.0] - 2025-02-25
+### :sparkles: New Features
+- [`501fe08`](https://github.com/klikli-dev/occultism/commit/501fe080d65902f31ef30937a371400a2b2cfb47) - Added tooltip for otherglass *(PR [#1303](https://github.com/klikli-dev/occultism/pull/1303) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+  - :arrow_lower_right: *addresses issue [#1285](https://github.com/klikli-dev/occultism/issues/1285) opened by [@MuteTiefling](https://github.com/MuteTiefling)*
+
+### :bug: Bug Fixes
+- [`ac0c23b`](https://github.com/klikli-dev/occultism/commit/ac0c23b51cc969b03af15e6c4629813eaf358145) - shift-rightclick with book of calling no longer works as of [#1087365](https://github.com/klikli-dev/occultism/pull/1087365) *(PR [#1307](https://github.com/klikli-dev/occultism/pull/1307) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+
+
+## [release/v1.21.1-1.174.1] - 2025-02-24
+### :bug: Bug Fixes
+- [`c4445ed`](https://github.com/klikli-dev/occultism/commit/c4445ed883151a615251078354dbec13d0b51099) - prevent possessed hoglins spawning as babies (who don't drop loot) *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.174.0] - 2025-02-19
+### :sparkles: New Features
+- [`1087365`](https://github.com/klikli-dev/occultism/commit/108736506c1df2309f8b86d76749711e3e669ac7) - spirit inventory updates *(PR [#1296](https://github.com/klikli-dev/occultism/pull/1296) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+- [`f4f49e9`](https://github.com/klikli-dev/occultism/commit/f4f49e962bcffad92511416f64333368db1dddd3) - Demonic partner cooks whole stacks when shift-clicked *(PR [#1302](https://github.com/klikli-dev/occultism/pull/1302) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+
+
+## [release/v1.21.1-1.173.4] - 2025-02-12
+### :bug: Bug Fixes
+- [`013a46c`](https://github.com/klikli-dev/occultism/commit/013a46c8a93fff4d4473594c56a0b2bb409e0526) - mixed up models of sapling and otherstone trader *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.173.3] - 2025-02-12
+### :bug: Bug Fixes
+- [`b84daaf`](https://github.com/klikli-dev/occultism/commit/b84daaf4ca9579ae97c9c33076a409da656f1f55) - typo'd and incorrect item IDs in JP localisation, causing errors on opening book of spirits. Closes [#1298](https://github.com/klikli-dev/occultism/pull/1298) *(PR [#1299](https://github.com/klikli-dev/occultism/pull/1299) by [@ThePixelatedCat](https://github.com/ThePixelatedCat))*
+  - :arrow_lower_right: *fixes issue [#1298](https://github.com/klikli-dev/occultism/issues/1298) opened by [@niedle2914](https://github.com/niedle2914)*
+
+
+## [release/v1.21.1-1.173.2] - 2025-02-04
+### :bug: Bug Fixes
+- [`b921288`](https://github.com/klikli-dev/occultism/commit/b921288538d2759efaf23fc4055678dc096d44c9) - update to theurgy particle changes *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.173.1] - 2025-01-17
+### :bug: Bug Fixes
+- [`d0082bf`](https://github.com/klikli-dev/occultism/commit/d0082bff8a4c425406a0bda1c04f922a1899af19) - Iesnium Golem fell out world *(PR [#1290](https://github.com/klikli-dev/occultism/pull/1290) by [@Eqis-Edu](https://github.com/Eqis-Edu))*
+
+
+## [release/v1.21.1-1.173.0] - 2025-01-16
+### :sparkles: New Features
+- [`a9674ae`](https://github.com/klikli-dev/occultism/commit/a9674ae5c02372af98c3d509c0e7852ded22fdf2) - Update zh_cn.json ([#1289](https://github.com/klikli-dev/occultism/pull/1289)) - thank you @Karma-Tress *(commit by [@Karma-Tress](https://github.com/Karma-Tress))*
+
+
+## [release/v1.21.1-1.172.0] - 2025-01-13
+### :sparkles: New Features
+- [`54ad4b3`](https://github.com/klikli-dev/occultism/commit/54ad4b30864ae8c4861983e133a4961f5c6fd75f) - Update a russian translation *(PR [#1281](https://github.com/klikli-dev/occultism/pull/1281) by [@Heimdallr-1](https://github.com/Heimdallr-1))*
+- [`44d8902`](https://github.com/klikli-dev/occultism/commit/44d89022f02678353149acd803cac8061d9d7f2f) - Smelter upgrade *(PR [#1286](https://github.com/klikli-dev/occultism/pull/1286) by [@Eqis-Edu](https://github.com/Eqis-Edu))*
+
+### :bug: Bug Fixes
+- [`1ffa776`](https://github.com/klikli-dev/occultism/commit/1ffa7763883f4da957bab3b010c36f83f8e2d4c3) - ruru syntax errors *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+- [`c203e46`](https://github.com/klikli-dev/occultism/commit/c203e46c94c95fbca339ae35d2bfcb50b58d4958) - demonic wife ring on wrong hand *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+### :wrench: Chores
+- [`384cd56`](https://github.com/klikli-dev/occultism/commit/384cd569c36e93225a8c7c68dc8de11ae7b2ee17) - run datagen *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.171.2] - 2025-01-06
+### :bug: Bug Fixes
+- [`900cccc`](https://github.com/klikli-dev/occultism/commit/900cccce848dfac6d960c24b87b8ae4662d4784f) - reduce chimera shrinking speed *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
 ## [release/v1.21.1-1.171.1] - 2025-01-01
 ### :bug: Bug Fixes
 - [`6450b97`](https://github.com/klikli-dev/occultism/commit/6450b9711fe0cf4a05be80495846c9f7d10522f0) - three fixes *(PR [#1279](https://github.com/klikli-dev/occultism/pull/1279) by [@Eqis-Edu](https://github.com/Eqis-Edu))*
@@ -1909,3 +1993,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.170.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.169.0...release/v1.21.1-1.170.0
 [release/v1.21.1-1.171.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.170.0...release/v1.21.1-1.171.0
 [release/v1.21.1-1.171.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.0...release/v1.21.1-1.171.1
+[release/v1.21.1-1.171.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.1...release/v1.21.1-1.171.2
+[release/v1.21.1-1.172.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.171.2...release/v1.21.1-1.172.0
+[release/v1.21.1-1.173.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.172.0...release/v1.21.1-1.173.0
+[release/v1.21.1-1.173.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.0...release/v1.21.1-1.173.1
+[release/v1.21.1-1.173.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.1...release/v1.21.1-1.173.2
+[release/v1.21.1-1.173.3]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.2...release/v1.21.1-1.173.3
+[release/v1.21.1-1.173.4]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.3...release/v1.21.1-1.173.4
+[release/v1.21.1-1.174.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.173.4...release/v1.21.1-1.174.0
+[release/v1.21.1-1.174.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.174.0...release/v1.21.1-1.174.1
+[release/v1.21.1-1.175.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.174.2...release/v1.21.1-1.175.0
+[release/v1.21.1-1.175.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.0...release/v1.21.1-1.175.1
+[release/v1.21.1-1.175.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.1...release/v1.21.1-1.175.2
+[release/v1.21.1-1.176.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.2...release/v1.21.1-1.176.0
+[release/v1.21.1-1.177.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.177.0...release/v1.21.1-1.177.1

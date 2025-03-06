@@ -30,7 +30,7 @@ public class ApprenticeRitualSatchelEntry extends EntryProvider {
         this.pageText("""
                          At first glance the satchel appears to be a normal bag, of moderate size and storage capacity. However, closer inspection reveals that a {0} is bound to the satchel, tasked with assisting the summoner in drawing pentacles for their rituals.
                         """,
-                this.color("Djinni", ChatFormatting.DARK_PURPLE)
+                this.color("Foliot", ChatFormatting.DARK_PURPLE)
 
         );
 

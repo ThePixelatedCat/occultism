@@ -56,16 +56,19 @@ public class SpiritContainer extends AbstractContainerMenu {
     public ItemStack quickMoveStack(Player playerIn, int index) {
         ItemStack itemstack = ItemStack.EMPTY;
         Slot slot = this.slots.get(index);
+
         if (slot != null && slot.hasItem()) {
             ItemStack itemstack1 = slot.getItem();
             itemstack = itemstack1.copy();
-            if (index < this.inventory.getSlots()) {
-                if (!this.moveItemStackTo(itemstack1, this.inventory.getSlots(), this.slots.size(), true)) {
+            
+            if (index >= this.slots.size() - this.inventory.getSlots()) {
+                if (!this.moveItemStackTo(itemstack1, 0, this.slots.size() - this.inventory.getSlots(), true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.moveItemStackTo(itemstack1, 0, this.inventory.getSlots(), false)) {
+            } else if (!this.moveItemStackTo(itemstack1, this.slots.size() - this.inventory.getSlots(), this.slots.size(), true)) {
                 return ItemStack.EMPTY;
             }
+            
 
             if (itemstack1.isEmpty()) {
                 slot.set(ItemStack.EMPTY);
