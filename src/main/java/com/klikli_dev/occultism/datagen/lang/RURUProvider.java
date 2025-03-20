@@ -140,7 +140,7 @@ public class RURUProvider extends AbstractModonomiconLanguageProvider {
 		this.lang("ru_ru").add(OccultismItems.RITUAL_SATCHEL_T1.get().getDescriptionId() + ".tooltip", "%s заточён в этой сумке.");
         this.lang("ru_ru").add(OccultismItems.RITUAL_SATCHEL_T2.get().getDescriptionId() + ".tooltip", "%s заточён в этой сумке.");
 
-        this.lang("ru_ru").add(OccultismItems.SOUL_SHARD_ITEM.get().getDescriptionId() + ".tooltip_filled", "Содержит душу %s.\Может быть использован для воскресения.");
+        this.lang("ru_ru").add(OccultismItems.SOUL_SHARD_ITEM.get().getDescriptionId() + ".tooltip_filled", "Содержит душу %s. Может быть использован для воскресения.");
         this.lang("ru_ru").add(OccultismItems.SOUL_SHARD_ITEM.get().getDescriptionId() + ".tooltip_empty", "Выпадает с Фамильяра после его преждевременной смерти. Может быть использован для воскресения.");
     }
 
@@ -3064,8 +3064,6 @@ public class RURUProvider extends AbstractModonomiconLanguageProvider {
         this.lang("ru_ru").add("item.occultism.ritual_dummy.summon_unbound_afrit.tooltip", "Вызывает незаточённого Африта, который может быть убит для получения Сущности Африта.");
 		this.lang("ru_ru").add("item.occultism.ritual_dummy.summon_unbound_marid", "Ритуал: Вызов незаточённого Марида");
         this.lang("ru_ru").add("item.occultism.ritual_dummy.summon_unbound_marid.tooltip", "Вызывает незаточённого Марида, который может быть убит для получения Сущности Марида.");
-        this.lang("ru_ru").add("item.occultism.ritual_dummy.wild_hunt", "Ритуал: Вызов Дикой Охоты");
-		this.add("item.occultism.ritual_dummy.summon_unbound_marid.tooltip", "Вызывает незаточённого Марида, который может быть убит для получения Сущности Марида.");
         this.lang("ru_ru").add("item.occultism.ritual_dummy.possess_unbound_otherworld_bird", "Ритуал: Овладение несвязанным дрикрылом");
         this.lang("ru_ru").add("item.occultism.ritual_dummy.possess_unbound_otherworld_bird.tooltip", "Завладевает Дрикрылом-фамильяром, который может быть приручен кем угодно, не только вызывателем.");
         this.lang("ru_ru").add("item.occultism.ritual_dummy.possess_unbound_parrot", "Ритуал: Овладение несвязанным попугаем");
