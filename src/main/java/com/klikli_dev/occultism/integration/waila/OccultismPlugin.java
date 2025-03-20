@@ -1,11 +1,11 @@
 package com.klikli_dev.occultism.integration.waila;
 
-import com.klikli_dev.occultism.Occultism;
 import com.klikli_dev.occultism.api.common.data.OtherworldBlockTier;
+import com.klikli_dev.occultism.common.block.GoldenSacrificialBowlBlock;
 import com.klikli_dev.occultism.common.block.otherworld.IOtherworldBlock;
-import com.klikli_dev.occultism.registry.OccultismBlocks;
+import com.klikli_dev.occultism.common.entity.spirit.SpiritEntity;
 import com.klikli_dev.occultism.util.CuriosUtil;
-import net.minecraft.world.level.block.Blocks;
+
 import snownee.jade.api.*;
 
 @WailaPlugin
@@ -36,6 +36,9 @@ public class OccultismPlugin implements IWailaPlugin {
             }
             return accessor;
         });
+
+        registration.registerBlockComponent(SacrificialComponentProvider.INSTANCE, GoldenSacrificialBowlBlock.class);
+        registration.registerEntityComponent(SpiritComponentProvider.INSTANCE, SpiritEntity.class);
     }
 
 }
