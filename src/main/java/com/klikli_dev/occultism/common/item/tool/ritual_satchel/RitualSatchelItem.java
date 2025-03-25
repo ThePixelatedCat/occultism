@@ -69,9 +69,9 @@ public abstract class RitualSatchelItem extends Item {
         return new SatchelInventory(stack, RitualSatchelContainer.SATCHEL_SIZE);
     }
 
-    protected boolean tryPlaceBlockForMatcher(UseOnContext context, Multiblock.SimulateResult targetMatcher){
-        if(targetMatcher.getStateMatcher().getType().equals(AnyMatcher.TYPE) || targetMatcher.getStateMatcher().getType().equals(DisplayOnlyMatcher.TYPE))
-            return false;
+    protected PlacementResult tryPlaceBlockForMatcher(UseOnContext context, Multiblock.SimulateResult targetMatcher) {
+        if (targetMatcher.getStateMatcher().getType().equals(AnyMatcher.TYPE) || targetMatcher.getStateMatcher().getType().equals(DisplayOnlyMatcher.TYPE))
+            return PlacementResult.ERROR_INVALID_MATCHER;
 
         var statePredicate = targetMatcher.getStateMatcher().getStatePredicate();
 
@@ -81,11 +81,11 @@ public abstract class RitualSatchelItem extends Item {
                 RitualSatchelContainer.SATCHEL_SIZE
         );
 
-        if(!context.getLevel().getBlockState(context.getClickedPos().above()).isAir())
-            return false;
+        if (!context.getLevel().getBlockState(context.getClickedPos().above()).isAir())
+            return PlacementResult.ERROR_BLOCK_ABOVE_NOT_AIR;
 
-        if(context.getItemInHand().is(OccultismItems.RITUAL_SATCHEL_T2) && !context.getLevel().getBlockState(context.getClickedPos()).isAir())
-            return false;
+        if (context.getItemInHand().is(OccultismItems.RITUAL_SATCHEL_T2) && !context.getLevel().getBlockState(context.getClickedPos()).isAir())
+            return PlacementResult.ERROR_BLOCK_AT_POSITION_NOT_AIR;
 
         for (int i = 0; i < inventory.getSlots(); i++) {
             var stack = inventory.getStackInSlot(i);
@@ -100,7 +100,7 @@ public abstract class RitualSatchelItem extends Item {
                 blockStateToPlace = block.getStateForPlacement(blockPlaceContext);
             } else if (stack.getItem() instanceof ChalkItem chalkItem) {
                 var chalkBlock = chalkItem.getGlyphBlock().get();
-                if(!context.getLevel().getBlockState(context.getClickedPos().below()).isAir())
+                if (!context.getLevel().getBlockState(context.getClickedPos().below()).isAir())
                     blockStateToPlace = chalkBlock.getStateForPlacement(new BlockPlaceContext(context));
             } else if (stack.getItem() instanceof RainbowChalkItem chalkItem) {
                 var chalkBlock = chalkItem.getGlyphBlock().get();
@@ -112,19 +112,19 @@ public abstract class RitualSatchelItem extends Item {
                 continue;
 
             if (statePredicate.test(context.getLevel(), targetMatcher.getWorldPosition(), blockStateToPlace)) {
-                //simulate item use
+                // Simulate item use
                 stack.useOn(new UseOnContext(context.getLevel(), context.getPlayer(), context.getHand(), stack, context.getHitResult()));
-                inventory.setStackInSlot(i, stack); //to force an update of the container if the item was used up or stack size reduced.
-                return true;
+                inventory.setStackInSlot(i, stack); // Force an update of the container if the item was used up or stack size reduced.
+                return PlacementResult.SUCCESS;
             }
         }
-        return false;
+        return PlacementResult.ERROR_NO_MATCHING_BLOCK_FOUND;
     }
 
     /**
      * This identifies the pentacle preview and sends it to the server, where the child classes can handle it.
      */
-    protected InteractionResult useOnClientSide(UseOnContext context){
+    protected InteractionResult useOnClientSide(UseOnContext context) {
         Level level = context.getLevel();
         BlockPos pos = context.getClickedPos();
         Player player = context.getPlayer();
@@ -170,8 +170,8 @@ public abstract class RitualSatchelItem extends Item {
         );
         for (int i = 0; i < inventory.getSlots(); i++) {
             var item = inventory.getStackInSlot(i);
-            if (getMaxDamage(item) > 0) {
-                if ((float) getDamage(item)/ (float) getMaxDamage(item) > 0.6f) {
+            if (this.getMaxDamage(item) > 0) {
+                if ((float) this.getDamage(item) / (float) this.getMaxDamage(item) > 0.6f) {
                     return false;
                 }
             }
@@ -216,6 +216,14 @@ public abstract class RitualSatchelItem extends Item {
         } else {
             return this.useOnServerSide(context);
         }
+    }
+
+    public enum PlacementResult {
+        SUCCESS,
+        ERROR_INVALID_MATCHER,
+        ERROR_BLOCK_ABOVE_NOT_AIR,
+        ERROR_BLOCK_AT_POSITION_NOT_AIR,
+        ERROR_NO_MATCHING_BLOCK_FOUND
     }
 
 }

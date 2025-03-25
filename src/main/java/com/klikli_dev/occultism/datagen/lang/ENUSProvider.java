@@ -192,6 +192,9 @@ public class ENUSProvider extends AbstractModonomiconLanguageProvider {
         this.add(TranslationKeys.RITUAL_SATCHEL_NO_PREVIEW_IN_WORLD, " You need to preview a pentacle using the Dictionary of Spirits.");
         this.add(TranslationKeys.RITUAL_SATCHEL_NO_PREVIEW_BLOCK_TARGETED, "You need to aim the ritual satchel at a preview block.");
         this.add(TranslationKeys.RITUAL_SATCHEL_NO_VALID_ITEM_IN_SATCHEL, "There is no valid item in the satchel for this previewed block.");
+        this.add(TranslationKeys.RITUAL_SATCHEL_BLOCK_ABOVE_NOT_AIR, "The block above the clicked position is not empty.");
+        this.add(TranslationKeys.RITUAL_SATCHEL_BLOCK_AT_POSITION_NOT_AIR, "The block at the clicked position is not empty.");
+        this.add(TranslationKeys.RITUAL_SATCHEL_INVALID_MATCHER, "Cannot place a block for an ANY or DISPLAY_ONLY multiblock matcher");
 
         this.addItem(OccultismItems.CHALK_YELLOW, "Yellow Chalk");
         this.addItem(OccultismItems.CHALK_PURPLE, "Purple Chalk");
