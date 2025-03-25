@@ -2001,7 +2001,7 @@ public class OccultismBookProvider extends SingleBookSubProvider {
 
     private BookEntryModel makeMercyGoatEntry(CategoryEntryMap entryMap, char icon) {
         this.context().entry("possess_goat");
-        this.lang().add(this.context().entryName(), "Goat of Mery");
+        this.lang().add(this.context().entryName(), "Goat of Mercy");
 
         this.context().page("entity");
         var entity = BookEntityPageModel.create()
