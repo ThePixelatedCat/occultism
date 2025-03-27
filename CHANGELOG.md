@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.179.3] - 2025-03-27
+### :bug: Bug Fixes
+- [`09e8d41`](https://github.com/klikli-dev/occultism/commit/09e8d417ceb1028fb8d93a5ca4ececa8c2817a0b) - transport foliots cannot use tag filter on storage actuator *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
 ## [release/v1.21.1-1.179.2] - 2025-03-25
 ### :bug: Bug Fixes
 - [`51c219a`](https://github.com/klikli-dev/occultism/commit/51c219acc3c0c5b47839d51ba2b6bf00ad9f53a9) - improve error messages for ritual satchels *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -2020,3 +2025,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.177.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.177.0...release/v1.21.1-1.177.1
 [release/v1.21.1-1.179.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.179.0...release/v1.21.1-1.179.1
 [release/v1.21.1-1.179.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.179.1...release/v1.21.1-1.179.2
+[release/v1.21.1-1.179.3]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.179.2...release/v1.21.1-1.179.3
