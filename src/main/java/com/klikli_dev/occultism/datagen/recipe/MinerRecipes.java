@@ -31,16 +31,18 @@ public abstract class MinerRecipes extends RecipeProvider {
         makeOreRecipe("uraninite_regular", 500, recipeOutput);
         makeOreRecipe("uraninite_dense", 200, recipeOutput);
         makeOreRecipe("sal_ammoniac", 750, recipeOutput);
-        makeOreRecipe("dark", 200, recipeOutput);
+        makeOreRecipe("dark_gem", 200, recipeOutput);
         makeOreRecipe("agate", 200, recipeOutput);
         makeOreRecipe("aluminum", 422, recipeOutput);
         makeOreRecipe("amber", 184, recipeOutput);
         makeOreRecipe("amethyst", 200, recipeOutput);
+        makeOreRecipe("antimony", 80, recipeOutput);
         makeOreRecipe("aquamarine", 200, recipeOutput);
         makeOreRecipe("ardite", 159, recipeOutput);
         MinerRecipeBuilder.minerRecipe(OccultismTags.Items.Miners.ORES, OccultismTags.makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "ores/" + "arcane_crystal")), 200)
                 .unlockedBy("has_miner", has(OccultismItems.MAGIC_LAMP_EMPTY.get()))
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Occultism.MODID, "miner/ores/" + "arcane_crystal"));
+        makeOreRecipe("bauxite", 168, recipeOutput);
         makeOreRecipe("beryl", 200, recipeOutput);
         makeOreRecipe("boron", 199, recipeOutput);
         makeOreRecipe("certus_quartz", 187, recipeOutput);
@@ -53,6 +55,7 @@ public abstract class MinerRecipes extends RecipeProvider {
 //        makeOreRecipe("dimensional_shard",127,recipeOutput);
         makeOreRecipe("electrotine", 155, recipeOutput);
         makeVanillaOreRecipe("emerald", 156, recipeOutput);
+        makeOreRecipe("fluorite", 133, recipeOutput);
         makeOreRecipe("garnet", 200, recipeOutput);
         makeVanillaItemRecipe(Items.GLOWSTONE, 234, recipeOutput);
         makeVanillaOreRecipe("gold", 311, recipeOutput);
@@ -62,14 +65,17 @@ public abstract class MinerRecipes extends RecipeProvider {
         makeOreRecipe("inferium", 190, recipeOutput);
         makeOreRecipe("iolite", 200, recipeOutput);
         makeVanillaOreRecipe("iron", 750, recipeOutput);
+        makeVanillaOreRecipe("iridium", 40, recipeOutput);
         makeVanillaOreRecipe("lapis", 343, recipeOutput);
         makeOreRecipe("lead", 500, recipeOutput);
+        makeOreRecipe("lignite_coal", 212, recipeOutput);
         makeOreRecipe("lithium", 201, recipeOutput);
         makeVanillaItemRecipe(Items.MAGMA_BLOCK, 300, recipeOutput);
         makeOreRecipe("magnesium", 233, recipeOutput);
         makeOreRecipe("malachite", 200, recipeOutput);
         makeOreRecipe("mithril", 169, recipeOutput);
         makeOreRecipe("morganite", 200, recipeOutput);
+        makeOreRecipe("monazite", 48, recipeOutput);
         makeVanillaItemRecipe(Items.GILDED_BLACKSTONE, 373, recipeOutput);
         makeVanillaItemRecipe(Items.NETHER_GOLD_ORE, 373, recipeOutput);
         makeVanillaItemRecipe(Items.NETHER_QUARTZ_ORE, 560, recipeOutput);
@@ -93,6 +99,7 @@ public abstract class MinerRecipes extends RecipeProvider {
         makeOreRecipe("tanzanite", 200, recipeOutput);
         makeOreRecipe("thorium", 222, recipeOutput);
         makeOreRecipe("tin", 602, recipeOutput);
+        makeOreRecipe("titanium", 10, recipeOutput);
         makeOreRecipe("topaz", 200, recipeOutput);
         makeOreRecipe("tungsten", 192, recipeOutput);
         makeOreRecipe("uranium", 140, recipeOutput);
@@ -170,8 +177,9 @@ public abstract class MinerRecipes extends RecipeProvider {
         makeStorageRecipe("raw_zinc", 90, recipeOutput);
         //Others
         makeStorageRecipe("arcane_crystal", 90, recipeOutput);
+        makeStorageRecipe("bauxite", 90, recipeOutput);
         makeStorageRecipe("coal", 90, recipeOutput);
-        makeStorageRecipe("dark", 90, recipeOutput);
+        makeStorageRecipe("dark_gem", 90, recipeOutput);
         makeStorageRecipe("diamond", 90, recipeOutput);
         makeStorageRecipe("emerald", 90, recipeOutput);
         makeStorageRecipe("fluorite", 90, recipeOutput);
@@ -258,6 +266,10 @@ public abstract class MinerRecipes extends RecipeProvider {
                 .unlockedBy("has_miner", has(OccultismItems.MAGIC_LAMP_EMPTY.get()))
                 .allowEmpty()
                 .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Occultism.MODID, "miner/eldritch/glowstone_dust"));
+        MinerRecipeBuilder.minerRecipe(OccultismTags.Items.Miners.ELDRITCH, OccultismTags.Items.CLAY, 90, 9)
+                .unlockedBy("has_miner", has(OccultismItems.MAGIC_LAMP_EMPTY.get()))
+                .allowEmpty()
+                .save(recipeOutput, ResourceLocation.fromNamespaceAndPath(Occultism.MODID, "miner/eldritch/clay"));
         MinerRecipeBuilder.minerRecipe(OccultismTags.Items.Miners.ELDRITCH, OccultismItems.MINING_DIMENSION_CORE_PIECE, 1)
                 .unlockedBy("has_miner", has(OccultismItems.MAGIC_LAMP_EMPTY.get()))
                 .allowEmpty()
@@ -358,6 +370,10 @@ public abstract class MinerRecipes extends RecipeProvider {
                 .unlockedBy("has_miner", has(OccultismItems.MAGIC_LAMP_EMPTY.get()))
                 .allowEmpty()
                 .save(consumer, ResourceLocation.fromNamespaceAndPath(Occultism.MODID, "miner/master/mining_dim_core"));
+        MinerRecipeBuilder.minerRecipe(OccultismTags.Items.Miners.MASTER, OccultismTags.makeItemTag(ResourceLocation.fromNamespaceAndPath("c", "ores/stellarite")), 50)
+                .unlockedBy("has_miner", has(OccultismItems.MAGIC_LAMP_EMPTY.get()))
+                .allowEmpty()
+                .save(consumer, ResourceLocation.fromNamespaceAndPath(Occultism.MODID, "miner/master/stellarite"));
     }
 
     public static void basic_resources(RecipeOutput consumer) {

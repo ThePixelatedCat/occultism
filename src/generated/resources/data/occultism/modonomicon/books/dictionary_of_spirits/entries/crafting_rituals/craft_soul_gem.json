@@ -26,17 +26,6 @@
       "title": ""
     },
     {
-      "type": "modonomicon:text",
-      "anchor": "",
-      "condition": {
-        "type": "modonomicon:none"
-      },
-      "show_title_separator": true,
-      "text": "book.occultism.dictionary_of_spirits.crafting_rituals.craft_soul_gem.usage.text",
-      "title": "book.occultism.dictionary_of_spirits.crafting_rituals.craft_soul_gem.usage.title",
-      "use_markdown_in_title": false
-    },
-    {
       "type": "occultism:ritual_recipe",
       "anchor": "",
       "condition": {
@@ -46,18 +35,29 @@
       "text": "",
       "title1": "",
       "title2": ""
+    },
+    {
+      "type": "modonomicon:text",
+      "anchor": "",
+      "condition": {
+        "type": "modonomicon:none"
+      },
+      "show_title_separator": true,
+      "text": "book.occultism.dictionary_of_spirits.crafting_rituals.craft_soul_gem.usage.text",
+      "title": "book.occultism.dictionary_of_spirits.crafting_rituals.craft_soul_gem.usage.title",
+      "use_markdown_in_title": false
     }
   ],
   "parents": [
     {
       "draw_arrow": true,
-      "entry": "crafting_rituals/overview",
+      "entry": "crafting_rituals/fragile_soul_gem",
       "line_enabled": true,
       "line_reversed": false
     }
   ],
   "show_when_any_parent_unlocked": false,
-  "sort_number": 22,
+  "sort_number": 23,
   "x": 4,
-  "y": -2
+  "y": -4
 }

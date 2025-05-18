@@ -38,6 +38,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EntityType;
@@ -48,6 +49,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.phys.AABB;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.living.EnderManAngerEvent;
 import net.neoforged.neoforge.event.entity.living.LivingDeathEvent;
 import net.neoforged.neoforge.event.entity.living.LivingIncomingDamageEvent;
 import net.neoforged.neoforge.event.entity.living.MobEffectEvent;
@@ -159,7 +161,7 @@ public class FamiliarEventHandler {
 
     @SubscribeEvent
     public static void livingDamageEvent(LivingIncomingDamageEvent event) {
-        if (!(event.getEntity() instanceof Player player))
+        if (!(event.getSource().getEntity() instanceof Player player))
             return;
 
         if (!FamiliarUtil.isFamiliarEnabled(player, OccultismEntities.HEADLESS_FAMILIAR.get()))
@@ -171,7 +173,19 @@ public class FamiliarEventHandler {
                 h -> h.getHeadType() == headType))
             return;
 
-        event.setAmount(event.getAmount() * 1.3f);
+        event.setAmount(event.getAmount() * 2f);
+    }
+
+    @SubscribeEvent
+    public static void headlessEndermanEvent(EnderManAngerEvent event) {
+
+        if (!FamiliarUtil.isFamiliarEnabled(event.getPlayer(), OccultismEntities.HEADLESS_FAMILIAR.get()))
+            return;
+
+        if (!FamiliarUtil.hasFamiliar(event.getPlayer(), OccultismEntities.HEADLESS_FAMILIAR.get(), FamiliarEntity::hasBlacksmithUpgrade))
+            return;
+
+        event.setCanceled(true);
     }
 
     private static void headlessStealHead(LivingDeathEvent event) {
@@ -249,5 +263,37 @@ public class FamiliarEventHandler {
             return;
 
         event.setResult(MobEffectEvent.Applicable.Result.DO_NOT_APPLY);
+    }
+
+    @SubscribeEvent
+    public static void beholderDarknessImmune(MobEffectEvent.Applicable event) {
+        if (event.getEffectInstance().getEffect() != MobEffects.DARKNESS)
+            return;
+
+        LivingEntity entity = event.getEntity();
+        EntityType<BeholderFamiliarEntity> beholder = OccultismEntities.BEHOLDER_FAMILIAR.get();
+
+        if (!FamiliarUtil.hasFamiliar(entity, beholder, FamiliarEntity::hasBlacksmithUpgrade) || !FamiliarUtil.hasFamiliar(entity, beholder, BeholderFamiliarEntity::hasWardenUpgrade))
+            return;
+
+        event.setResult(MobEffectEvent.Applicable.Result.DO_NOT_APPLY);
+    }
+
+    @SubscribeEvent
+    public static void safeFall(LivingIncomingDamageEvent event) {
+        LivingEntity entity = event.getEntity();
+
+        if (!(entity instanceof Player))
+            return;
+
+        DamageSource source = event.getSource();
+
+        if (!source.is(DamageTypeTags.IS_FALL) && !source.is(DamageTypes.FLY_INTO_WALL))
+            return;
+
+        if (!FamiliarUtil.hasFamiliar(entity, OccultismEntities.OTHERWORLD_BIRD_TYPE.get(), OtherworldBirdEntity::hasBlacksmithUpgrade))
+            return;
+
+        event.setCanceled(true);
     }
 }

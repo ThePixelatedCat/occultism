@@ -33,6 +33,18 @@
       "title": ""
     },
     {
+      "type": "modonomicon:spotlight",
+      "anchor": "",
+      "condition": {
+        "type": "modonomicon:none"
+      },
+      "item": {
+        "item": "occultism:cruelty_essence"
+      },
+      "text": "book.occultism.dictionary_of_spirits.pentacles.brown_chalk.essence.text",
+      "title": ""
+    },
+    {
       "type": "modonomicon:crafting_recipe",
       "anchor": "",
       "condition": {
@@ -66,5 +78,5 @@
   "show_when_any_parent_unlocked": false,
   "sort_number": 33,
   "x": 10,
-  "y": 4
+  "y": 5
 }
