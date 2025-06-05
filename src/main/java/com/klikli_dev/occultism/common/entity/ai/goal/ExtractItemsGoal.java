@@ -190,7 +190,7 @@ public class ExtractItemsGoal extends PausableGoal {
             }
         }
 
-        return filterEmpty;
+        return !filterEmpty;
     }
 
     public boolean canSeeTarget() {

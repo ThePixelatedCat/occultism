@@ -4,13 +4,6 @@
       "type": "neoforge:not",
       "value": {
         "type": "neoforge:tag_empty",
-        "tag": "minecraft:coals"
-      }
-    },
-    {
-      "type": "neoforge:not",
-      "value": {
-        "type": "neoforge:tag_empty",
         "tag": "c:dusts/coal"
       }
     }
@@ -18,7 +11,7 @@
   "type": "occultism:crushing",
   "ignore_crushing_multiplier": true,
   "ingredient": {
-    "tag": "minecraft:coals"
+    "item": "minecraft:coal"
   },
   "result": {
     "type": "occultism:tag",

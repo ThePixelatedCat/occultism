@@ -10,6 +10,7 @@ import com.klikli_dev.modonomicon.api.datagen.book.condition.BookAndConditionMod
 import com.klikli_dev.modonomicon.api.datagen.book.condition.BookEntryReadConditionModel;
 import com.klikli_dev.modonomicon.api.datagen.book.condition.BookModLoadedConditionModel;
 import com.klikli_dev.modonomicon.api.datagen.book.page.*;
+import com.klikli_dev.occultism.datagen.book.getting_started.BookshelfBindingEntry;
 import com.klikli_dev.occultism.datagen.book.getting_started.RitualSatchelsEntry;
 import com.klikli_dev.occultism.integration.modonomicon.pages.BookBindingCraftingRecipePageModel;
 import com.klikli_dev.occultism.integration.modonomicon.pages.BookRitualRecipePageModel;
@@ -53,7 +54,7 @@ public class GettingStartedCategory extends CategoryProvider {
                 "__________________________________",
                 "______e_h_____ạ_______m___________",
                 "__________________________________",
-                "______________Á_C___p_S___w_x_y_z_"
+                "______________Á_É_C_p_S___w_x_y_z_"
         };
     }
 
@@ -106,6 +107,9 @@ public class GettingStartedCategory extends CategoryProvider {
 
         var booksOfBindingAutomation = this.add(this.makeBooksOfBindingAutomationEntry(this.entryMap, 'Á'));
         booksOfBindingAutomation.withParent(BookEntryParentModel.create(booksOfBinding.getId()));
+
+        var bookshelfBinding = this.add(new BookshelfBindingEntry(this).generate('É'));
+        bookshelfBinding.withParent(BookEntryParentModel.create(booksOfBinding.getId()));
 
         var booksOfCalling = this.add(this.makeBooksOfCallingEntry(this.entryMap, 'C'));
         booksOfCalling.withParent(BookEntryParentModel.create(booksOfBinding.getId()));
@@ -844,7 +848,7 @@ public class GettingStartedCategory extends CategoryProvider {
                 """
                         Just like the candles from Minecraft, [](item://occultism:large_candle) and colored versions can be lit, turning in a great light source. 
                         \\
-                        In addiction, you can use a [](item://minecraft:torch), [](item://minecraft:soul_torch), [](item://minecraft:redstone_torch) or [](item://occultism:spirit_torch) to change the type of fire.
+                        In addition, you can use a [](item://minecraft:torch), [](item://minecraft:soul_torch), [](item://minecraft:redstone_torch) or [](item://occultism:spirit_torch) to change the type of fire.
                         \\
                         Also can be waterlogged.
                         """);

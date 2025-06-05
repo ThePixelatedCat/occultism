@@ -6,13 +6,16 @@
   "duration": 5,
   "ingredients": [
     {
-      "tag": "c:dusts/copper"
+      "item": "occultism:otherworld_essence"
     },
     {
-      "tag": "c:dusts/otherworld_wood"
+      "item": "occultism:otherworld_essence"
     },
     {
-      "tag": "c:dusts/otherstone"
+      "item": "occultism:otherworld_essence"
+    },
+    {
+      "item": "occultism:spirit_attuned_gem"
     }
   ],
   "pentacle_id": "occultism:craft_djinni",

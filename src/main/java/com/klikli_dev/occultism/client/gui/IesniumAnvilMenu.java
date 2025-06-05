@@ -17,6 +17,7 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.ItemEnchantments;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.AnvilUpdateEvent;
+import net.neoforged.neoforge.event.entity.player.AnvilRepairEvent;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -39,9 +40,14 @@ public class IesniumAnvilMenu extends AnvilMenu {
     @Override
     protected void onTake(Player player, @NotNull ItemStack stack) {
         if (!player.getAbilities().instabuild) {
-            player.giveExperienceLevels(-this.cost.get()/2);
+            if(ApothicEnchantingIntegration.isLoaded()) {
+                player.giveExperiencePoints(-ApothicEnchantingIntegration.getTotalExperiencePointsForLevel(this.cost.get() / 2));
+            } else {
+                player.giveExperienceLevels(-this.cost.get() / 2);
+            }
         }
 
+        NeoForge.EVENT_BUS.post(new AnvilRepairEvent(player, inputSlots.getItem(0), inputSlots.getItem(1), stack));
         this.inputSlots.setItem(0, ItemStack.EMPTY);
         if (this.repairItemCountCost > 0) {
             ItemStack itemstack = this.inputSlots.getItem(1);

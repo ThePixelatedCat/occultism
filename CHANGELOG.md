@@ -4,6 +4,47 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [release/v1.21.1-1.180.0] - 2025-05-18
+### :sparkles: New Features
+- [`f3b4bbc`](https://github.com/klikli-dev/occultism/commit/f3b4bbcca4faec7b1e5a6f1b893c4e8069a7af81) - True Sight Staff and more balancing *(PR [#1341](https://github.com/klikli-dev/occultism/pull/1341) by [@Eqis-Edu](https://github.com/Eqis-Edu))*
+  - :arrow_lower_right: *addresses issue [#1342](https://github.com/klikli-dev/occultism/issues/1342) opened by [@GBember01](https://github.com/GBember01)*
+- [`4fb6d9a`](https://github.com/klikli-dev/occultism/commit/4fb6d9af4ed53673150f630ac6168b51aa697913) - Update ru_ru *(PR [#1326](https://github.com/klikli-dev/occultism/pull/1326) by [@klikli-dev](https://github.com/klikli-dev))*
+- [`8f3edc6`](https://github.com/klikli-dev/occultism/commit/8f3edc608df35b07e801d906668a6e4093b78f00) - Update ru_ru *(PR [#1326](https://github.com/klikli-dev/occultism/pull/1326) by [@klikli-dev](https://github.com/klikli-dev))*
+
+### :bug: Bug Fixes
+- [`a274bc2`](https://github.com/klikli-dev/occultism/commit/a274bc2599917a6e0ee72d37eece69b1b59022c5) - duplicate call to .add() *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+- [`7d94b41`](https://github.com/klikli-dev/occultism/commit/7d94b412642f53d916837d584635356d3a068f29) - allow calls to lang("ru_ru").addTooltip *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+- [`9d0d9cf`](https://github.com/klikli-dev/occultism/commit/9d0d9cfa141600a3aad1a20df9ac0a87fcc3df86) - Add missing localization and fix typos for zh_cn *(PR [#1337](https://github.com/klikli-dev/occultism/pull/1337) by [@zeng-github01](https://github.com/zeng-github01))*
+- [`1747a93`](https://github.com/klikli-dev/occultism/commit/1747a934f9cebe34a34ebab9a482b73a1b935a99) - some time/weather spirits die before casting *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+- [`f64fdf0`](https://github.com/klikli-dev/occultism/commit/f64fdf0614d65d546acbfb3c0718087d0d69adc1) - hard limit possessed bee reinforcement spawning *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.179.3] - 2025-03-27
+### :bug: Bug Fixes
+- [`09e8d41`](https://github.com/klikli-dev/occultism/commit/09e8d417ceb1028fb8d93a5ca4ececa8c2817a0b) - transport foliots cannot use tag filter on storage actuator *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.179.2] - 2025-03-25
+### :bug: Bug Fixes
+- [`51c219a`](https://github.com/klikli-dev/occultism/commit/51c219acc3c0c5b47839d51ba2b6bf00ad9f53a9) - improve error messages for ritual satchels *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+- [`ae0afb4`](https://github.com/klikli-dev/occultism/commit/ae0afb4e89facfe3fc70e0fd1a285d1885a7c31e) - typo in dictionary of spirits *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.179.1] - 2025-03-25
+### :bug: Bug Fixes
+- [`c651025`](https://github.com/klikli-dev/occultism/commit/c651025a26503b6d4bd9a7bf9c599a6d5c6a8399) - remove duplicate ruru lang *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.177.1] - 2025-03-05
+### :bug: Bug Fixes
+- [`6c24233`](https://github.com/klikli-dev/occultism/commit/6c24233cfebf27b40b4e5e1d99dfd03e57e83599) - wrong ingredients and text for apprentice ritual satchel *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
+## [release/v1.21.1-1.176.0] - 2025-02-26
+### :sparkles: New Features
+- [`e0efcd7`](https://github.com/klikli-dev/occultism/commit/e0efcd7b0a4a5e6aec1415a6801a839d5f85d644) - update ritual ingredients *(commit by [@klikli-dev](https://github.com/klikli-dev))*
+
+
 ## [release/v1.21.1-1.175.2] - 2025-02-25
 ### :bug: Bug Fixes
 - [`97ee8f1`](https://github.com/klikli-dev/occultism/commit/97ee8f10e063d724a2e7815c97ee1a7ed7328470) - ensure beholder can deal damage even if owner player cannot be retrieved *(commit by [@klikli-dev](https://github.com/klikli-dev))*
@@ -1995,3 +2036,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [release/v1.21.1-1.175.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.174.2...release/v1.21.1-1.175.0
 [release/v1.21.1-1.175.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.0...release/v1.21.1-1.175.1
 [release/v1.21.1-1.175.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.1...release/v1.21.1-1.175.2
+[release/v1.21.1-1.176.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.175.2...release/v1.21.1-1.176.0
+[release/v1.21.1-1.177.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.177.0...release/v1.21.1-1.177.1
+[release/v1.21.1-1.179.1]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.179.0...release/v1.21.1-1.179.1
+[release/v1.21.1-1.179.2]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.179.1...release/v1.21.1-1.179.2
+[release/v1.21.1-1.179.3]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.179.2...release/v1.21.1-1.179.3
+[release/v1.21.1-1.180.0]: https://github.com/klikli-dev/occultism/compare/release/v1.21.1-1.179.3...release/v1.21.1-1.180.0

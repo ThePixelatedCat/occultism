@@ -67,7 +67,9 @@ public class OccultismItemTagProvider extends ItemTagsProvider {
         this.tag(this.cTag("ores/dark_gem"))
                 .addOptional(this.loc("evilcraft:dark_ores"))
                 .addOptionalTag(this.loc("evilcraft:ores/dark_gem")); //does not exist as of 1.21, but if they unify the pattern it will
+        this.tag(this.cTag("gems/dark_gem")).addOptional(this.loc("evilcraft:dark_gem"));
         this.tag(this.cTag("dusts/dark_gem")).addOptional(this.loc("evilcraft:dark_gem_crushed"));
+        this.tag(this.cTag("storage_blocks/dark_gem")).addOptional(this.loc("evilcraft:dark_block"));
         this.tag(this.cTag("ores/black_quartz")).addOptional(this.loc("actuallyadditions:black_quartz_ore"));
         this.tag(this.cTag("gems/black_quartz")).addOptional(this.loc("actuallyadditions:black_quartz"));
         this.tag(this.cTag("dusts/certus_quartz")).addOptional(this.loc("ae2:certus_quartz_dust"));
@@ -78,11 +80,14 @@ public class OccultismItemTagProvider extends ItemTagsProvider {
                 .addOptional(this.loc("ae2:smooth_sky_stone_block"))
                 .addOptional(this.loc("ae2:sky_stone_brick"))
                 .addOptional(this.loc("ae2:sky_stone_small_brick"));
+        this.tag(this.cTag("storage_blocks/rune")).addOptional(this.loc("forbidden_arcanus:rune_block"));
+        this.tag(this.cTag("coal_coke")).addOptional(this.loc("modern_industrialization:coke"));
+        this.tag(this.cTag("dusts/coal_coke")).addOptionalTag(this.cTag("dusts/coke"));
     }
 
     private void addCuriosTags(HolderLookup.Provider provider) {
         this.tag(OccultismTags.makeItemTag(ResourceLocation.fromNamespaceAndPath(CuriosApi.MODID, "belt"))).add(OccultismItems.SATCHEL.get()).replace(false);
-        this.tag(OccultismTags.makeItemTag(ResourceLocation.fromNamespaceAndPath(CuriosApi.MODID, "hands"))).add(OccultismItems.STORAGE_REMOTE.get()).replace(false);
+        this.tag(OccultismTags.makeItemTag(ResourceLocation.fromNamespaceAndPath(CuriosApi.MODID, "hands"))).add(OccultismItems.STORAGE_REMOTE.get()).add(OccultismItems.TRUE_SIGHT_STAFF.get()).replace(false);
         this.tag(OccultismTags.makeItemTag(ResourceLocation.fromNamespaceAndPath(CuriosApi.MODID, "head"))).add(OccultismItems.OTHERWORLD_GOGGLES.get()).replace(false);
         this.tag(OccultismTags.makeItemTag(ResourceLocation.fromNamespaceAndPath(CuriosApi.MODID, "ring"))).add(OccultismItems.FAMILIAR_RING.get()).replace(false);
     }
@@ -186,7 +191,10 @@ public class OccultismItemTagProvider extends ItemTagsProvider {
         this.tag(ItemTags.BOOKSHELF_BOOKS).add(OccultismItems.BOOK_OF_CALLING_FOLIOT_LUMBERJACK.get());
         this.tag(ItemTags.BOOKSHELF_BOOKS).add(OccultismItems.BOOK_OF_CALLING_FOLIOT_TRANSPORT_ITEMS.get());
         this.tag(ItemTags.BOOKSHELF_BOOKS).add(OccultismItems.BOOK_OF_BINDING_EMPTY.get());
+        this.tag(ItemTags.BOOKSHELF_BOOKS).add(OccultismItems.TABOO_BOOK.get());
 
+        this.tag(ItemTags.MINING_ENCHANTABLE).addTag(OccultismTags.Items.Miners.MINERS);
+        this.tag(ItemTags.MINING_LOOT_ENCHANTABLE).addTag(OccultismTags.Items.Miners.MINERS);
         this.tag(ItemTags.DURABILITY_ENCHANTABLE).addTag(OccultismTags.Items.Miners.MINERS);
         this.tag(ItemTags.DURABILITY_ENCHANTABLE).addTag(OccultismTags.Items.TOOLS_CHALK);
         this.tag(ItemTags.DURABILITY_ENCHANTABLE).addTag(OccultismTags.Items.TOOLS_KNIFE);
@@ -344,6 +352,9 @@ public class OccultismItemTagProvider extends ItemTagsProvider {
 
         // Wood
         this.copy(OccultismTags.Blocks.OTHERWORLD_LOGS, OccultismTags.Items.OTHERWORLD_LOGS);
+
+        // Clay
+        this.tag(OccultismTags.Items.CLAY).add(Items.CLAY_BALL).replace(false);
     }
 
     private void addDusts(HolderLookup.Provider provider) {

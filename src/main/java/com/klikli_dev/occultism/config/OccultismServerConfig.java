@@ -46,6 +46,9 @@ public class OccultismServerConfig {
     public static class ItemSettings {
         public final BooleanValue anyOreDivinationRod;
         public final BooleanValue minerOutputBeforeBreak;
+        public final BooleanValue minerEfficiency;
+        public final BooleanValue minerFortune;
+        public final BooleanValue unbreakableChalks;
 
         public ItemSettings(ModConfigSpec.Builder builder) {
             builder.comment("Item Settings").push("items");
@@ -60,6 +63,21 @@ public class OccultismServerConfig {
                                     "Miners head to the output in the Dimensional Mineshaft before it breaks"
                             )
                             .define("minerOutputBeforeBreak", false);
+            this.minerEfficiency =
+                    builder.comment(
+                                    "Allow miners enchanted with efficiency mine faster"
+                            )
+                            .define("minerEfficiency", true);
+            this.minerFortune =
+                    builder.comment(
+                                    "Allow miners enchanted with fortune to has a chance of mine extra results each operation"
+                            )
+                            .define("minerFortune", true);
+            this.unbreakableChalks =
+                    builder.comment(
+                                    "Don't damage chalks on use"
+                            )
+                            .define("unbreakableChalks", false);
 
             builder.pop();
         }
@@ -87,6 +105,11 @@ public class OccultismServerConfig {
         public final DoubleValue blacksmithFamiliarRepairChance;
         public final IntValue greedySearchRange;
         public final IntValue greedyVerticalSearchRange;
+        public final IntValue dayTimeToCast;
+        public final IntValue nightTimeToCast;
+        public final IntValue rainTimeToCast;
+        public final IntValue thunderTimeToCast;
+        public final IntValue clearWeatherTimeToCast;
 
         public SpiritJobSettings(ModConfigSpec.Builder builder) {
             builder.comment("Spirit Job Settings").push("spirit_job");
@@ -179,6 +202,31 @@ public class OccultismServerConfig {
                                     "The vertical value that the upgraded greedy familiar will seek blocks. (Large distances can cause delays in finding)")
                             .defineInRange("greedyVerticalSearchRange", 16, 0, Integer.MAX_VALUE);
 
+            this.dayTimeToCast =
+                    builder.comment(
+                                    "The time in ticks it takes to cast the day time ritual.")
+                            .defineInRange("dayTimeToCast", 20 * 5, 0, Integer.MAX_VALUE);
+
+            this.nightTimeToCast =
+                    builder.comment(
+                                    "The time in ticks it takes to cast the night time ritual.")
+                            .defineInRange("nightTimeToCast", 20 * 5, 0, Integer.MAX_VALUE);
+
+            this.rainTimeToCast =
+                    builder.comment(
+                                    "The time in ticks it takes to cast the rain ritual.")
+                            .defineInRange("rainTimeToCast", 20 * 10, 0, Integer.MAX_VALUE);
+
+            this.thunderTimeToCast =
+                    builder.comment(
+                                    "The time in ticks it takes to cast the thunder ritual.")
+                            .defineInRange("thunderTimeToCast", 20 * 15, 0, Integer.MAX_VALUE);
+
+            this.clearWeatherTimeToCast =
+                    builder.comment(
+                                    "The time in ticks it takes to cast the clear weather ritual.")
+                            .defineInRange("clearWeatherTimeToCast", 20 * 5, 0, Integer.MAX_VALUE);
+
             builder.pop();
         }
     }
@@ -191,7 +239,6 @@ public class OccultismServerConfig {
         public final BooleanValue enableNightTimeRitual;
         public final BooleanValue enableRemainingIngredientCountMatching;
         public final DoubleValue ritualDurationMultiplier;
-
 
         public RitualSettings(ModConfigSpec.Builder builder) {
             builder.comment("Ritual Settings").push("rituals");

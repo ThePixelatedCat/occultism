@@ -9,16 +9,10 @@
       "tag": "c:dusts/netherite"
     },
     {
-      "tag": "c:dusts/blackstone"
+      "item": "minecraft:wither_skeleton_skull"
     },
     {
       "tag": "c:dusts/blackstone"
-    },
-    {
-      "item": "minecraft:wither_rose"
-    },
-    {
-      "item": "minecraft:wither_rose"
     },
     {
       "item": "minecraft:wither_rose"

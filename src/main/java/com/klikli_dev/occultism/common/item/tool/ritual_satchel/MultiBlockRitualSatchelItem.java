@@ -149,7 +149,7 @@ public class MultiBlockRitualSatchelItem extends RitualSatchelItem {
         for (var targetMatcher : simulation.getSecond()) {
             var localContext = new UseOnContext(context.getPlayer(), context.getHand(),
                     new BlockHitResult(targetMatcher.getWorldPosition().getCenter(), context.getClickedFace(), targetMatcher.getWorldPosition().above(), false));
-            if (this.tryPlaceBlockForMatcher(localContext, targetMatcher)) {
+            if (this.tryPlaceBlockForMatcher(localContext, targetMatcher) == PlacementResult.SUCCESS) {
                 placedAnything = true;
             }
         }

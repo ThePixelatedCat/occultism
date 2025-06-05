@@ -54,13 +54,26 @@ public class SingleBlockRitualSatchelItem extends RitualSatchelItem {
             return InteractionResult.FAIL;
         }
 
-        if (this.tryPlaceBlockForMatcher(context, targetMatcher.get())) {
-            return InteractionResult.SUCCESS;
-        }
-
-        context.getPlayer().displayClientMessage(Component.translatable(TranslationKeys.RITUAL_SATCHEL_NO_VALID_ITEM_IN_SATCHEL).withStyle(ChatFormatting.YELLOW), true);
-
-        return InteractionResult.FAIL;
+        return switch (this.tryPlaceBlockForMatcher(context, targetMatcher.get())) {
+            case SUCCESS -> InteractionResult.SUCCESS;
+            case ERROR_NO_MATCHING_BLOCK_FOUND -> {
+                context.getPlayer().displayClientMessage(Component.translatable(TranslationKeys.RITUAL_SATCHEL_NO_VALID_ITEM_IN_SATCHEL).withStyle(ChatFormatting.YELLOW), true);
+                yield InteractionResult.FAIL;
+            }
+            case ERROR_BLOCK_ABOVE_NOT_AIR -> {
+                context.getPlayer().displayClientMessage(Component.translatable(TranslationKeys.RITUAL_SATCHEL_BLOCK_ABOVE_NOT_AIR).withStyle(ChatFormatting.YELLOW), true);
+                yield InteractionResult.FAIL;
+            }
+            case ERROR_BLOCK_AT_POSITION_NOT_AIR -> {
+                context.getPlayer().displayClientMessage(Component.translatable(TranslationKeys.RITUAL_SATCHEL_BLOCK_AT_POSITION_NOT_AIR).withStyle(ChatFormatting.YELLOW), true);
+                yield InteractionResult.FAIL;
+            }
+            case ERROR_INVALID_MATCHER -> {
+                context.getPlayer().displayClientMessage(Component.translatable(TranslationKeys.RITUAL_SATCHEL_INVALID_MATCHER).withStyle(ChatFormatting.YELLOW), true);
+                yield InteractionResult.FAIL;
+            }
+            default -> InteractionResult.FAIL;
+        };
     }
 
     @Override

@@ -25,6 +25,7 @@ package com.klikli_dev.occultism.datagen;
 import com.klikli_dev.modonomicon.api.datagen.BookProvider;
 import com.klikli_dev.occultism.Occultism;
 import com.klikli_dev.occultism.datagen.lang.ENUSProvider;
+import com.klikli_dev.occultism.datagen.lang.RURUProvider;
 import com.klikli_dev.occultism.datagen.loot.OccultismBlockLoot;
 import com.klikli_dev.occultism.datagen.loot.OccultismEntityLoot;
 import com.klikli_dev.occultism.datagen.loot.OccultismLootModifiers;
@@ -85,6 +86,8 @@ public class DataGenerators {
 
         //Important: Lang provider (in this case enus) needs to be added after the book provider to process the texts added by the book provider
         generator.addProvider(event.includeClient(), enUSProvider);
+
+        generator.addProvider(event.includeClient(), new RURUProvider(generator.getPackOutput()));
 
         event.getGenerator().addProvider(event.includeServer(),
                 (DataProvider.Factory<DatapackBuiltinEntriesProvider>) output ->

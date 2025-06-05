@@ -5,34 +5,34 @@
   },
   "duration": 90,
   "entity_to_sacrifice": {
-    "display_name": "ritual.occultism.sacrifice.snow_golem",
-    "tag": "c:golems/snow"
+    "display_name": "ritual.occultism.sacrifice.humans",
+    "tag": "occultism:humans"
   },
   "entity_to_summon": "occultism:possessed_weak_breeze",
   "ingredients": [
     {
-      "item": "minecraft:oxidized_copper"
+      "tag": "c:storage_blocks/copper"
     },
     {
-      "item": "minecraft:weathered_chiseled_copper"
+      "tag": "c:storage_blocks/copper"
     },
     {
-      "item": "minecraft:exposed_copper_grate"
+      "tag": "c:storage_blocks/copper"
     },
     {
-      "item": "minecraft:cut_copper"
+      "tag": "c:storage_blocks/copper"
     },
     {
-      "item": "minecraft:tuff"
+      "item": "minecraft:tuff_bricks"
     },
     {
-      "item": "minecraft:tuff"
+      "item": "minecraft:tuff_bricks"
     },
     {
-      "item": "minecraft:tuff"
+      "item": "minecraft:tuff_bricks"
     },
     {
-      "item": "minecraft:tuff"
+      "item": "minecraft:tuff_bricks"
     }
   ],
   "pentacle_id": "occultism:contact_wild_spirit",

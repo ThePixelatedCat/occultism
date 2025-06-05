@@ -10,22 +10,13 @@
       "item": "minecraft:sand"
     },
     {
+      "tag": "minecraft:terracotta"
+    },
+    {
       "item": "minecraft:gravel"
     },
     {
-      "item": "minecraft:bricks"
-    },
-    {
-      "item": "minecraft:mud_bricks"
-    },
-    {
-      "item": "minecraft:stone_bricks"
-    },
-    {
-      "item": "minecraft:white_terracotta"
-    },
-    {
-      "item": "minecraft:dirt"
+      "tag": "minecraft:terracotta"
     }
   ],
   "item_to_use": {

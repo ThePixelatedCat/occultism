@@ -5,25 +5,13 @@
   },
   "duration": 90,
   "entity_to_sacrifice": {
-    "display_name": "ritual.occultism.sacrifice.axolotls",
-    "tag": "c:axolotls"
+    "display_name": "ritual.occultism.sacrifice.cows",
+    "tag": "c:cows"
   },
   "entity_to_summon": "occultism:possessed_warden",
   "ingredients": [
     {
-      "item": "minecraft:sculk_shrieker"
-    },
-    {
-      "item": "minecraft:sculk_sensor"
-    },
-    {
       "item": "minecraft:sculk"
-    },
-    {
-      "item": "minecraft:sculk"
-    },
-    {
-      "item": "minecraft:sculk_sensor"
     },
     {
       "item": "minecraft:sculk"
@@ -32,7 +20,7 @@
       "item": "minecraft:sculk"
     },
     {
-      "item": "minecraft:sculk_sensor"
+      "item": "minecraft:sculk"
     },
     {
       "item": "minecraft:sculk"

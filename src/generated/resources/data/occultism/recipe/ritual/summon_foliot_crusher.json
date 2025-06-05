@@ -7,16 +7,16 @@
   "entity_to_summon": "occultism:foliot",
   "ingredients": [
     {
-      "tag": "c:raw_materials/iron"
+      "tag": "c:ingots/iron"
     },
     {
-      "tag": "c:raw_materials/gold"
+      "tag": "c:ingots/gold"
     },
     {
-      "tag": "c:raw_materials/copper"
+      "tag": "c:ingots/copper"
     },
     {
-      "tag": "c:raw_materials/silver"
+      "tag": "c:ingots/silver"
     }
   ],
   "pentacle_id": "occultism:summon_foliot",
